@@ -16,12 +16,19 @@ const toogleMode = () => {
 const mapa_palco = document.querySelector('#mapa-de-palco');
 mapa_palco.addEventListener('click', (e) => {
 	e.preventDefault();
-	window.open('assets/mapa_de_palco.jpg', '_blank');
+	window.open('assets/mapa_de_palco.jpg');
 });
 
 // Portfolio
 const portfolio = document.querySelector('#portfolio');
 portfolio.addEventListener('click', (e) => {
 	e.preventDefault();
-	window.open('assets/portfolio.pdf', '_blank');
+	window.open('assets/portfolio.pdf');
+});
+
+// Release
+const release = document.querySelector('#release');
+release.addEventListener('click', (e) => {
+	e.preventDefault();
+	window.open('assets/release.pdf');
 });
