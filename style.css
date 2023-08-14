@@ -25,14 +25,6 @@
 }
 
 body {
-  /* background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;surface-color-hover
-  */
-
-  /* shorthand (atalho)
-  background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
@@ -51,7 +43,6 @@ body * {
 
 /** profile */
 #profile {
-  
   padding: 24px;
   text-align: center;
 }
@@ -153,6 +144,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   padding: 16px;
+  text-decoration: none;
   transition: background 0.2s;
 }
 
@@ -162,24 +154,31 @@ ul li a:hover {
 
 /* contact */
 #contact {
-  display: flex;
   font-size: 14px;
-  justify-content: center;
-  padding: 24px 0;
+  padding: 10px 0;
 }
 
-#contact p {
+#contact-title {
+  font-weight: 600;
+}
+
+#contact span {
   align-items: center;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  padding: 16px; 
+  padding: 5px; 
 }
 
 footer {
-  font-size: 14px;
+  font-size: 12px;
   padding: 24px 0;
   text-align: center;
+}
+
+footer a {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* media queries */
