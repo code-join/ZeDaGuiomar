@@ -13,8 +13,8 @@ const toogleMode = () => {
 };
 
 // Mapa de Palco
-const mapa_palco = document.querySelector('#mapa-de-palco');
-mapa_palco.addEventListener('click', (e) => {
+const mapa_de_palco = document.querySelector('#mapa-de-palco');
+mapa_de_palco.addEventListener('click', (e) => {
 	e.preventDefault();
 	window.open('assets/mapa_de_palco.jpg');
 });
@@ -31,4 +31,11 @@ const release = document.querySelector('#release');
 release.addEventListener('click', (e) => {
 	e.preventDefault();
 	window.open('assets/release.pdf');
+});
+
+// Rider camarim
+const rider_camarim = document.querySelector('#rider-camarim');
+rider_camarim.addEventListener('click', (e) => {
+	e.preventDefault();
+	window.open('assets/rider_camarim.pdf');
 });
