@@ -100,24 +100,6 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 
-/* contact */
-#contact {
-  font-size: 14px;
-  padding: 10px 0;
-}
-
-#contact-title {
-  font-weight: 600;
-}
-
-#contact span {
-  align-items: center;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  padding: 5px; 
-}
-
 footer {
   font-size: 12px;
   padding: 24px 0;
