@@ -47,6 +47,21 @@ body * {
   line-height: 24px;
 }
 
+/* music */
+#music {  
+  display:flex;
+  justify-content: center;  
+}
+
+audio {
+  height: 35px;
+  width: 250px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: rgb(221, 213, 199); 
+  
+}
+
 /* links */
 ul {
   display: flex;
