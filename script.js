@@ -1,41 +1,41 @@
-const toogleMode = () => {
-	const html = document.documentElement;
-	html.classList.toggle('light');
+const btn = document.querySelector('#button-contato');
+const janelaModal = document.querySelector('#janela-modal');
+const wpp1 = document.querySelector('#wpp1');
+const wpp2 = document.querySelector('#wpp2');
 
-	// pegar a tag img
-	// const img = document.querySelector("#profile img");
+// Abrir Janela modal
+btn.addEventListener('click', () => {
+	janelaModal.style.display = 'block';
+});
 
-	// if(html.classList.contains('light')){
-	//   img.setAttribute('src', './assets/avatar-light.JPG')
-	// } else {
-	//   img.setAttribute('src', './assets/avatar.png')
-	// }
+// Fechar Janela Modal
+const fecharJanelaModal = () => {
+	janelaModal.style.display = 'none';
 };
 
-// Mapa de Palco
-const mapa_de_palco = document.querySelector('#mapa-de-palco');
-mapa_de_palco.addEventListener('click', (e) => {
+// Pegar número escolhido
+const pegarNumero = (wpp) => {
+	const numberFormat = wpp.textContent.replace(/\D/g, '');
+	wpp.href = `https://api.whatsapp.com/send?phone=${numberFormat}`;
+	window.open(wpp.href);
+};
+
+// wpp1
+wpp1.addEventListener('click', (e) => {
 	e.preventDefault();
-	window.open('assets/mapa_de_palco.jpg');
+	pegarNumero(wpp1);
+	fecharJanelaModal();
 });
 
-// Portfolio
-const portfolio = document.querySelector('#portfolio');
-portfolio.addEventListener('click', (e) => {
+// wpp2
+wpp2.addEventListener('click', (e) => {
 	e.preventDefault();
-	window.open('assets/portfolio.pdf');
+	pegarNumero(wpp2);
+	fecharJanelaModal();
 });
 
-// Release
-const release = document.querySelector('#release');
-release.addEventListener('click', (e) => {
-	e.preventDefault();
-	window.open('assets/release.pdf');
-});
-
-// Rider camarim
-const rider_camarim = document.querySelector('#rider-camarim');
-rider_camarim.addEventListener('click', (e) => {
-	e.preventDefault();
-	window.open('assets/rider_camarim.pdf');
+// Fechar Janela Modal com o X
+const buttonX = document.querySelector('.btn-close');
+buttonX.addEventListener('click', () => {
+	janelaModal.style.display = 'none';
 });
