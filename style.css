@@ -78,6 +78,40 @@ ul li a:hover {
   color: black;
 }
 
+/* janela modal */
+#janela-modal {
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(221, 213, 199);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+  color: rgb(199, 107, 7);
+}
+
+.modal-body {
+  text-align: center;
+  flex-direction: column;
+}
+
+#wpp1, #wpp2 {
+  font-weight: 500;
+  color: black;
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#wpp1:hover, #wpp2:hover {
+  color: rgb(5, 157, 177);
+}
+
 /* social links */
 #social-links {
   display: flex;

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="">
 	<head>
+		<!-- Fontes do Google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
 			rel="stylesheet"
+		/>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
 		/>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,12 +38,15 @@
 				</li>
 				<!-- Mapa de palco -->
 				<li>
-					<a id="mapa-de-palco" href="assets/mapa_de_palco.jpg" target="_blank">Mapa de palco</a
+					<a id="mapa-de-palco" href="assets/mapa_de_palco.jpg" target="_blank"
+						>Mapa de palco</a
 					>
 				</li>
 				<!-- Portfolio -->
 				<li>
-					<a id="portfolio" href="assets/portfolio.pdf" target="_blank">Portfólio</a>
+					<a id="portfolio" href="assets/portfolio.pdf" target="_blank"
+						>Portfólio</a
+					>
 				</li>
 				<!-- Release -->
 				<li>
@@ -47,7 +58,36 @@
 						>Rider de camarim</a
 					>
 				</li>
+				<!-- Contato -->
+				<li>
+					<a id="button-contato" href="#">Contato</a>
+				</li>
 			</ul>
+			<!-- Janela Modal -->
+			<div id="janela-modal" class="modal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Escolha um número</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<p>
+								<a href="#" id="wpp1">(31) 99966-7764</a>
+							</p>
+							<p>
+								<a href="#" id="wpp2">(31) 99129-5111</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Social Links -->
 			<div id="social-links">
 				<!-- YouTube -->
 				<a href="https://www.youtube.com/@ZedaGuiomar" target="_blank">
@@ -75,8 +115,15 @@
 				&copy;2023
 			</footer>
 		</div>
+		<!-- Ícones -->
 		<script
 			src="https://kit.fontawesome.com/1b3b36e600.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Bootstrap -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 			crossorigin="anonymous"
 		></script>
 	</body>
