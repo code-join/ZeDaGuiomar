@@ -1,4 +1,8 @@
-#carouselExampleIndicators {
-  border: 5px solid black;
+body {
+  background-color:  rgb(221, 213, 199);
+}
+
+#carouselExampleIndicators {  
+  border: 3px solid black;
   margin: 20px;
 }
